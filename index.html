@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>Journal tab</title>
+</head>
+<body>
+    <div class="app-container">
+        <div class="left-container">
+            <div class="columns">
+                <div class="menu">
+                    <button id="home-btn"><img src="img/house.svg"></button>
+                    <button id="tasks-btn"><img src="img/list-check.svg"></button>
+                    <button id="notes-btn"><img src="img/stickies.svg"></button>
+                    <button id="calendar-btn"><img src="img/calendar.svg"></button>
+                </div>
+                <div class="main-window">
+                    <div id="date">
+                        <script type="text/javascript">
+                            function doDate() {
+                                var str = "";
+                                var months = new Array("January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December");
+                                var clock = new Date();
+                                var now = new Date();
+            
+                                str += months[clock.getMonth()] + " " + now.getDate() + ", " + clock.getFullYear() + " | " + ("0" + now.getHours()).slice(-2) +":" + ("0" + now.getMinutes()).slice(-2) + ":" + ("0" + now.getSeconds()).slice(-2);
+                                document.getElementById("date").innerHTML = str;
+                            }
+                            setInterval(doDate, 1000);
+                            doDate();
+                        </script>
+                    </div>
+                    <div class="links">
+                        <a href="#"><img src="img/youtube.svg"></a>
+                        <a href="#"><img src="img/twitter.svg"></a>
+                        <a href="#"><img src="img/github.svg"></a>
+                    </div>
+                    <div>
+                        <p>Hello, David!</p>
+                    </div>
+                </div>
+                <div class="anime-girl">
+                    <img src="img/maid 1.png">
+                </div>
+            </div>
+            
+            
+        </div>
+
+        
+    </div> 
+
+    <script>
+        
+    </script>
+</body>
+</html>

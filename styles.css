@@ -1,0 +1,101 @@
+body {
+    background-color: rgb(192, 163, 191);
+    color: white;
+    font-family: 'Inter', sans-serif;
+}
+
+.left-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.columns {
+    display: flex;
+    flex-direction: row;
+}
+
+.columns div {
+    background-color: rgb(160, 127, 154);
+    border-radius: 8px;
+}
+
+/* MENU */
+.menu {
+    display: flex;
+    flex-direction: column;
+    padding: 18px;
+    margin: 14px;
+}
+
+.menu button {
+    width: 100px;
+    height: 100px;
+    margin: 14px;
+    border: none;
+    text-decoration: none;
+    border-radius: 8px;
+}
+
+.menu button:hover {
+    transform: ()
+}
+
+#home-btn {
+    background-color: rgb(137, 255, 147);
+}
+#tasks-btn {
+    background-color: rgb(137, 212, 255);
+}
+#notes-btn {
+    background-color: rgb(241, 137, 255);
+}
+#calendar-btn {
+    background-color: rgb(255, 233, 137);
+}
+
+.menu img {
+    width: 70px;
+}
+
+/* MAIN WINDOW */
+.main-window {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin: 14px;
+}
+
+/* DATE */
+
+.links {
+    /* width: 100%; */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.links a {
+    padding: 0 10px 0 10px;
+}
+
+.links img {
+    width: 60px;
+}
+
+/* ANIME GIRL */
+.anime-girl {
+    display: flex;
+    margin: 14px;
+    width: 30%;
+    background-color: rgba(0, 0, 0, 0) !important;
+}
+.anime-girl img {
+    width: 100%;
+    min-height: 100%;
+    min-width: 100%; 
+    background-color: none;
+    object-fit: contain;
+}
+
