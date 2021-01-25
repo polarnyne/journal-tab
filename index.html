@@ -19,43 +19,135 @@
                     <button id="calendar-btn"><img src="img/calendar.svg"></button>
                 </div>
                 <div class="main-window">
-                    <div id="date">
-                        <script type="text/javascript">
-                            function doDate() {
-                                var str = "";
-                                var months = new Array("January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December");
-                                var clock = new Date();
-                                var now = new Date();
-            
-                                str += months[clock.getMonth()] + " " + now.getDate() + ", " + clock.getFullYear() + " | " + ("0" + now.getHours()).slice(-2) +":" + ("0" + now.getMinutes()).slice(-2) + ":" + ("0" + now.getSeconds()).slice(-2);
-                                document.getElementById("date").innerHTML = str;
-                            }
-                            setInterval(doDate, 1000);
-                            doDate();
-                        </script>
-                    </div>
-                    <div class="links">
-                        <a href="#"><img src="img/youtube.svg"></a>
-                        <a href="#"><img src="img/twitter.svg"></a>
-                        <a href="#"><img src="img/github.svg"></a>
-                    </div>
-                    <div>
-                        <p>Hello, David!</p>
-                    </div>
+
+                    <!-- HOME -->
+                    <!-- <div class="home">
+                        <div class="links">
+                            <a href="#"><img src="img/youtube.svg"></a>
+                            <a href="#"><img src="img/twitter.svg"></a>
+                            <a href="#"><img src="img/github.svg"></a>
+                        </div>
+                        <div>
+                            <p>Hello, David!</p>
+                        </div>
+                    </div> -->
+
+                    <!-- TASKS -->
+                    <!-- <div class="tasks">
+                        <div class="new-task">
+                            <span class="form">
+                                <input autocomplete="off" type="text" id="task-input" placeholder="What are your plans today?">
+                                <button class="submit-btn" onclick="newTask()" id="task-submit" >Add task</button>
+                            </span>
+                        </div>
+                        <div class="lists">
+                            <div class="div-list">
+                                <h1>To-do</h1>
+                                <div class="to-do-div" id="unfinished">
+                                    
+                                </div>
+                            </div>
+
+                            <div class="div-list">
+                                <h1>Finished!</h1>
+                                <div class="to-do-div" id="done">
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div> -->
+
+
+
+
+
+
+                    <div class="container">
+                        <div class="row">
+                          <div class="col-lg-5 col-md-6 col-sm-8 mx-auto">
+                            <div class="card my-5">
+                              <h5 class="card-header bg-primary text-white">
+                                Todo List
+                              </h5>
+                              <div class="card-body">
+                                <div class="input-group mb-3">
+                                  <input type="text" id="search" class="form-control" placeholder="Search todo">
+                                  <div class="input-group-append">
+                                    <span class="input-group-text"> <i class="fas fa-search"></i> </span>
+                                  </div>
+                                </div>
+                                <ul class="list-group mb-3">
+                                  <li class="list-group-item">
+                                    <i class="far fa-square done-icon"></i>
+                                    <i class="far fa-check-square done-icon"></i>
+                                    <span class="todo-text">It's a dummy todo item</span>
+                                    <i class="far fa-trash-alt"></i>
+                                  </li>
+                                  <li class="list-group-item done">
+                                    <i class="far fa-square done-icon"></i>
+                                    <i class="far fa-check-square done-icon"></i>
+                                    <span class="todo-text">This task is complete</span>
+                                    <i class="far fa-trash-alt"></i>
+                                  </li>
+                                  <li class="list-group-item">
+                                    <i class="far fa-square done-icon"></i>
+                                    <i class="far fa-check-square done-icon"></i>
+                                    <span class="todo-text">Here is another item</span>
+                                    <i class="far fa-trash-alt"></i>
+                                  </li>
+                                </ul>
+                                <button id="clearBtn" type="button" class="btn btn-dark btn-sm">Clear All</button>
+                              </div>
+                              <div class="card-footer">
+                                <form id="form">
+                                  <div class="input-group">
+                                    <input type="text" class="form-control" id="todo" placeholder="Add new todo item">
+                                    <div class="input-group-append">
+                                      <button type="submit" class="btn btn-primary"><i class="fas fa-plus"></i> Add
+                                      </button>
+                                    </div>
+                                  </div>
+                                </form>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+
+
+
+
+
+
+
+
                 </div>
                 <div class="anime-girl">
                     <img src="img/maid 1.png">
                 </div>
             </div>
-            
-            
         </div>
-
-        
     </div> 
+    <span id="settings"><img src="img/gear.svg"></span>
+    <span id="date">
+        <script type="text/javascript">
+            function doDate() {
+                var str = "";
+                var months = new Array("January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December");
+                var clock = new Date();
+                var now = new Date();
 
-    <script>
-        
+                str += months[clock.getMonth()] + " " + now.getDate() + ", " + clock.getFullYear() + " | " + ("0" + now.getHours()).slice(-2) +":" + ("0" + now.getMinutes()).slice(-2) + ":" + ("0" + now.getSeconds()).slice(-2);
+                document.getElementById("date").innerHTML = str;
+            }
+            setInterval(doDate, 1000);
+            doDate();
+        </script>
+    </span>
+    
+
+    <script src="script.js">
     </script>
 </body>
 </html>
